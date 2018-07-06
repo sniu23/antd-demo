@@ -1,0 +1,29 @@
+{
+  "name": "antd-demo",
+  "version": "1.0.0",
+  "description": "use antd + umi + dva + immer for front system template",
+  "scripts": {
+    "dev": "PORT=3000 BROWSER=none umi dev",
+    "build": "PORT=3000 umi build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "umi": "*",
+    "umi-plugin-dva": "*",
+    "umi-plugin-routes": "*"
+  },
+  "devDependencies": {
+    "antd-pro-server": "^1.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-umi": "^0.1.4",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.14.3",
+    "mockjs": "^1.0.1-beta3"
+  },
+  "license": "MIT"
+}
