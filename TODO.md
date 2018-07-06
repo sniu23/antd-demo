@@ -1,3 +1,6 @@
+# TECH
+
+> ANTD + UMI + DVA + IMMER
 
 # CMD
 
@@ -32,6 +35,16 @@ yarn build # 构建
 # TODO
 
 - [V] 初始化，脚手架，快速上手。参考 [dva-umi](https://github.com/xiaohuoni/dva-umi)
-- [V] 验证嵌套路由
-- [X] 验证路由、布局、使用antd组件
-- [X] 使用dva
+- [V] 使用antd组件。
+- [V] 验证基础路由、嵌套路由。
+- [V] 验证全局布局。
+- [V] 验证自定义404路由。
+- [X] 验证动态路由、路由过滤、权限路由、配置式路由、路由动效、面包屑……
+- [X] 验证不同的全局布局、布局嵌套……
+- [X] 配合 dva 使用
+- [X] 验证全局样式自定义
+
+
+# GET
+
+- `/pages`下除了`index.js`，`page.js` 也可以作为子目录的默认路由。
