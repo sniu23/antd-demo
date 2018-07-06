@@ -1,11 +1,12 @@
-
-import {Layout, Menu, Breadcrumb, Icon} from 'antd'
+import withRouter from 'umi/withRouter';
+import { connect } from 'dva';
+import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 import Link from 'umi/link';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
-function App(props) {
+function Master(props) {
   return (
     <Layout>
       <Header className="header">
@@ -49,6 +50,7 @@ function App(props) {
             </Menu>
           </Sider>
           <Content style={{ padding: '0 24px', minHeight: 280 }}>
+            <h1>{ props.text }</h1>
             { props.children }
           </Content>
         </Layout>
@@ -60,4 +62,12 @@ function App(props) {
   )
 }
 
-export default App
+function mapStateToProps(state) {
+  return {
+    text: state.global.text,
+  };
+}
+
+export default withRouter(
+  connect(mapStateToProps)(Master)
+);
